@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+:root {
+  --primary-bgc: #ffffff;
+  --gray1: #333333;
+  --gray2: #4f4f4f;
+  --btn-color: white;
+  --primary-font: "Inconsolata", monospace;
+  --fotter-font: "Montserrat", sans-serif;
+  --p-font: "Space Mono", monospace;
+}
+
+body {
+  background-color: black;
+}
+
+.container {
+  background-color: var(--primary-bgc);
+  margin: 0 auto;
+  padding: 40px 77px 39px 77px;
+  border-radius: 12px;
+  box-shadow: 0px 2px 24px rgba(0, 0, 0, 0.1);
+  max-width: 1440px;
+}
+
+.header__title {
+  font-family: var(--primary-font);
+  font-size: 2.4rem;
+  line-height: 2.518rem;
+  letter-spacing: -8%;
+}
+
+.notfound {
+  display: flex;
+  /* flex-wrap: wrap; */
+  justify-content: space-between;
+  margin-top: 200px;
+  margin-bottom: 293px;
+}
+
+.notfound__image {
+  width: 539px;
+}
+
+.notfound__title {
+  font-family: var(--primary-font);
+  font-weight: 700;
+  font-size: 6.4rem;
+  line-height: 9.478rem;
+  letter-spacing: -0.35rem;
+  width: 586px;
+}
+
+.notfound__description {
+  font-family: var(--primary-font);
+  font-weight: 400;
+  font-size: 2.4rem;
+  font-style: normal;
+  line-height: 3.554rem;
+  letter-spacing: -3.5%;
+  margin-top: 34px;
+  margin-bottom: 64px;
+  width: 381px;
+}
+
+.btn {
+  display: inline-block;
+  font-family: var(--primary-font);
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 2.073rem;
+  letter-spacing: -3.5%;
+  background-color: var(--gray1);
+  padding: 24px 43px 24px 43px;
+  text-decoration: none;
+  color: var(--btn-color);
+  text-transform: uppercase;
+}
+
+.footer {
+  text-align: center;
+}
+
+.author {
+  font-family: var(--fotter-font);
+  font-weight: 600;
+  font-size: 1.4rem;
+  line-height: 1.707rem;
+  color: var(--gray1);
+}
+
+@media all and (max-width: 1150px) {
+  .container {
+    margin: 0;
+    padding: 20px 24px 42px 24px;
+    height: 100%;
+  }
+
+  .notfound {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 64px;
+    margin-bottom: 96px;
+  }
+
+  .notfound__image {
+    width: 100%;
+    padding: 0 44px;
+  }
+
+  .notfound__title {
+    font-family: var(--p-font);
+    font-style: normal;
+    font-size: 4.8rem;
+    font-weight: 700;
+    line-height: 7.109rem;
+    letter-spacing: -3.5%;
+    width: 100%;
+    min-width: 350px;
+    margin-bottom: 29px;
+  }
+
+  .notfound__description {
+    font-family: var(--p-font);
+    font-weight: 400;
+    font-size: 1.8rem;
+    font-style: normal;
+    line-height: 2.666rem;
+    letter-spacing: -3.5%;
+    width: 100%;
+    min-width: 328px;
+    margin: 0 0 67px 0;
+  }
+}
